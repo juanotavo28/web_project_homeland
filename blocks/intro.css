@@ -39,7 +39,7 @@
   text-align: right;
 }
 
-.intro__text--small {
+.intro__text_small {
   max-width: 722px;
   width: 100%;
   font-family: 'Inter', sans-serif;
@@ -90,7 +90,7 @@
   text-align: right;
 }
 
-.intro__text--small {
+.intro__text_small {
   max-width: 720px;
   width: 100%;
   font-family: 'Inter', sans-serif;
@@ -141,7 +141,7 @@
   text-align: right;
 }
 
-.intro__text--small {
+.intro__text_small {
   max-width: 288px;
   width: 100%;
   font-family: 'Inter', sans-serif;
