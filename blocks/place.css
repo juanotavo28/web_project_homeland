@@ -1,0 +1,190 @@
+.place{
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  grid-template-rows: repeat(4, auto);
+  column-gap: 40px;
+  row-gap: 48px;
+  grid-template-areas:
+  "title autor"
+  "image description"
+  "image description"
+  "button description";
+}
+
+.place__title{
+  grid-area: title;
+  font-size: 72px;
+}
+
+.place__autor{
+  grid-area: autor;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 18px;
+}
+
+.place__image{
+  grid-area: image;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.place__image:hover{
+    filter: brightness(50%);
+}
+
+.place__button{
+  grid-area: button;
+  font-size: 18px;
+  background: linear-gradient(90deg, #0278FE, #003A7B);
+  color: white;
+  padding: 13px 20px;
+  border: none;
+  text-decoration: none;
+  justify-self: start;
+}
+
+.place__button:hover {
+  background: linear-gradient(90deg, #08038e, #020147);
+  box-shadow: 0 4px 12px rgba(2, 120, 254, 0.4);
+}
+
+.place__description{
+  grid-area: description;
+  font-size: 18px;
+  line-height: 1.63;
+  gap: 25px;
+}
+.place__description p {
+  margin: 0 0 25px;
+}
+
+@media screen and (max-width: 1024px){
+  .place{
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  grid-template-rows: repeat(4, auto);
+  column-gap: 28px;
+  row-gap: 48px;
+  grid-template-areas:
+  "title autor"
+  "image description"
+  "image description"
+  "button description";
+}
+
+.place__title{
+  grid-area: title;
+  font-size: 42px;
+}
+
+.place__autor{
+  grid-area: autor;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 18px;
+}
+
+.place__image{
+  grid-area: image;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.place__image:hover{
+    filter: brightness(50%);
+}
+
+.place__button{
+  grid-area: button;
+  font-size: 18px;
+  background: linear-gradient(90deg, #0278FE, #003A7B);
+  color: white;
+  padding: 13px 20px;
+  border: none;
+  text-decoration: none;
+  justify-self: start;
+}
+
+.place__button:hover {
+  background: linear-gradient(90deg, #08038e, #020147);
+  box-shadow: 0 4px 12px rgba(2, 120, 254, 0.4);
+}
+
+.place__description{
+  grid-area: description;
+  font-size: 16px;
+  line-height: 1.63;
+  gap: 25px;
+}
+.place__description p {
+  margin: 0 0 25px;
+}
+}
+
+@media screen and (max-width: 544px){
+  .place{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  row-gap: 30px;
+  grid-template-areas:
+  "title"
+  "autor"
+  "image"
+  "description"
+  "button";
+}
+
+.place__title{
+  grid-area: title;
+  font-size: 32px;
+}
+
+.place__autor{
+  grid-area: autor;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 16px;
+}
+
+.place__image{
+  grid-area: image;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.place__image:hover{
+    filter: brightness(50%);
+}
+
+.place__button{
+  grid-area: button;
+  font-size: 14px;
+  background: linear-gradient(90deg, #0278FE, #003A7B);
+  color: white;
+  padding: 13px 20px;
+  border: none;
+  text-decoration: none;
+  justify-self: start;
+  gap: 0 auto 66px;
+}
+
+.place__button:hover {
+  background: linear-gradient(90deg, #08038e, #020147);
+  box-shadow: 0 4px 12px rgba(2, 120, 254, 0.4);
+}
+
+.place__description{
+  grid-area: description;
+  font-size: 16px;
+  line-height: 1.63;
+  gap: 25px;
+}
+.place__description p {
+  margin: 0 0 25px;
+}
+}
